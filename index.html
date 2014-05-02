@@ -348,6 +348,13 @@ function linkify( selector ) {
 					</ul>
 				</section>
 
+				<section id="voice">
+					<h2>Now with voice!</h2>
+					<p>
+						To enabled the 'Speak It' voice plugin, simply press 'v' to show the widget and begin transmitting live audio from your microphone.
+					</p>
+				</section>
+
 				<section>
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
@@ -377,6 +384,12 @@ function linkify( selector ) {
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
 				// parallaxBackgroundSize: '2100px 900px',
 
+				// voice config
+				// @param voiceRoom - Name of the room
+				// @param voiceAPIKey - API Key needed to create a room, not needed to join a room
+				voiceRoom: 'revealjs',
+				voiceAPIKey: '',
+
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -384,7 +397,8 @@ function linkify( selector ) {
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/voice/voice.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
