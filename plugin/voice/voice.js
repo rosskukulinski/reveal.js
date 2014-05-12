@@ -2,7 +2,7 @@
  * Speakit.io plugin for reveal.js
  * Add voice to your presentation.
  *
- * http://Speakit.io
+ * https://Speakit.io
  */
 
 var STATE_WIDGET = false;
@@ -33,7 +33,7 @@ var voice;
   }, false);
 
   // grab the lastest speakit.io library
-  loadScript('http://'+HOST+'/static/js/SpeakItClient.js', function() {
+  loadScript('https://'+HOST+'/static/js/SpeakItClient.js', function() {
     // grab html config
     ROOMNAME = Reveal.getConfig().voiceRoom;
     APIKEY = Reveal.getConfig().voiceAPIKey;
